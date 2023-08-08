@@ -28,5 +28,10 @@ describe('Taxi', function (){
 			const actual = taxi.passengers;
 			assert.deepStrictEqual(actual, []);
 		});
+
+		it('should tell me how many passengers there are', function () {
+			const actual = taxi.numberOfPassengers();
+			assert.deepStrictEqual(actual, 0);
+		})
 	});
 });
