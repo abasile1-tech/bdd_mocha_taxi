@@ -47,6 +47,14 @@ describe('Taxi', function (){
 			const actual = taxi.passengers;
 			assert.deepStrictEqual(actual, ['Glen']);
 		});
+
+		it('should remove all passengers', function() {
+			taxi.addPassenger('Steven');
+			taxi.addPassenger('Glen');
+			taxi.removeAllPassengers();
+			const actual = taxi.passengers;
+			assert.deepStrictEqual(actual, []);
+		})
 		
 	});
 });

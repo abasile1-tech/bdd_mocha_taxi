@@ -23,4 +23,8 @@ Taxi.prototype.removePassengerByName = function(name) {
 	}
 }
 
+Taxi.prototype.removeAllPassengers = function() {
+	this.passengers = [];
+}
+
 module.exports = Taxi;
