@@ -5,7 +5,7 @@ describe('Taxi', function (){
 	let taxi;
 
 	beforeEach(function () {
-		taxi = new Taxi('Toyota', 'Prius');
+		taxi = new Taxi('Toyota', 'Prius', 'Ned');
 	});
 
 	it('should have a manufacturer', function () {
@@ -17,4 +17,9 @@ describe('Taxi', function (){
 		const actual = taxi.model;
 		assert.strictEqual(actual, 'Prius');
 	});
+
+	it('should have a driver', function () {
+		const actual = taxi.driver;
+		assert.strictEqual(actual, 'Ned');
+	})
 });
