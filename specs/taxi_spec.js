@@ -32,6 +32,21 @@ describe('Taxi', function (){
 		it('should tell me how many passengers there are', function () {
 			const actual = taxi.numberOfPassengers();
 			assert.deepStrictEqual(actual, 0);
-		})
+		});
+
+		it('should add a passenger', function () {
+			taxi.addPassenger('Steven');
+			const actual = taxi.passengers;
+			assert.deepStrictEqual(actual, ['Steven']);
+		});
+
+		it('should remove a passenger by name', function () {
+			taxi.addPassenger('Steven');
+			taxi.addPassenger('Glen');
+			taxi.removePassengerByName('Steven')
+			const actual = taxi.passengers;
+			assert.deepStrictEqual(actual, ['Glen']);
+		});
+		
 	});
 });
