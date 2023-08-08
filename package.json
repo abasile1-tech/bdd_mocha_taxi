@@ -1,0 +1,11 @@
+{
+  "name": "bdd_mocha_taxi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "taxi.js",
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "author": "",
+  "license": "ISC"
+}
