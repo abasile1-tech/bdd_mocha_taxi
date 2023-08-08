@@ -22,4 +22,11 @@ describe('Taxi', function (){
 		const actual = taxi.driver;
 		assert.strictEqual(actual, 'Ned');
 	})
+
+	describe('passengers', function () {
+		it('should start with no passengers', function () {
+			const actual = taxi.passengers;
+			assert.deepStrictEqual(actual, []);
+		});
+	});
 });
